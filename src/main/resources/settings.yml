@@ -1,0 +1,119 @@
+# TTT Plugin by Haoshoku
+# Visit our discord: https://haoshoku.xyz/go/discord | Haoshoku#1507
+settings:
+  # Supported languages: en, de
+  language: 'en'
+  # MySQL settings for ttt stats
+  mysql:
+    use_mysql: true
+    host: 'localhost'
+    port: '3306'
+    database: 'ttt'
+    username: 'root'
+    password: '123456'
+  lobby_server: 'Lobby'
+  maps:
+    - Topia
+    - PirateBay
+  lobby_time: 30
+  grace_period_time: 30
+  ingame_time: 600
+  restart_time: 10
+  # Do not set this value lower than 3. The plugin will set it automatically to 3 if you do that.
+  min_players: 3
+  motd:
+    lobby: '&2Lobby'
+    ingame: '&4Ingame'
+    restarting: '&4Restarting'
+  # This plugin also blocks payload crash method and massive chunk loading. If you get setbacks, increase the value!
+  massive_chunk_loading:
+    enabled: true
+    diff_x: 15
+    diff_y: 10
+    diff_z: 15
+  # Set the limit to open chests (useful if player keep opening chests that other players are not able to get items)
+  max_chest_open: 5
+  chat:
+    spectator_chat: '&7[Spectator&7] %player%&f: %message%'
+    lobby_chat: '%playerPrefix%%player%&f: %message%'
+    ingame_detective_chat: '&9%player%&f: %message%'
+    ingame_chat: '&a%player%&f: %message%'
+  tab:
+    detective: '&9'
+    innocent: '&a'
+    traitor: '&4'
+  karma:
+    detective_kills_innocent: -20
+    detective_kills_traitor: -20
+    innocent_kills_detective: -50
+    innocent_kills_innocent: -20
+    innocent_kills_traitor: 20
+    traitor_kills_detective: 10
+    traitor_kills_innocent: 10
+  # Permission and rank name must be the same
+  # Example: ranks.*001admin* -> permission: ttt.rank.*001admin*
+  ranks:
+    001admin:
+      prefix: '&4Admin &8| &4'
+      tab_prefix: '&4Admin &8| &4'
+      permission: 'ttt.rank.001admin'
+    002default:
+      prefix: '&9Player &8| &9'
+      tab_prefix: '&9'
+      permission: 'ttt.rank.002default'
+  # The nick configuration starts. If you are using NickAddon by Papiertüchlein, set auto_nick to true
+  # You can download nick_addon here: https://haoshoku.xyz/go/nickaddon
+  auto_nick: true
+  nick:
+    # MySQL settings for auto-nick (only compatible with NickAddon by Papiertuch)
+    mysql:
+      use_mysql: true
+      host: 'localhost'
+      port: '3306'
+      database: 'nick'
+      username: 'root'
+      password: '123456'
+    # After you nick you get the prefix of this rank! Be careful that the rank here actually exists
+    use_nick_rank: '002default'
+  nick_random_names:
+    - Elissay
+    - Enizix
+    - Hayconnn
+    - Cudbane
+    - xoad_
+    - Sopus_
+    - 3su
+    - Nicedead
+    - Lefters
+    - fyuzu
+    - hvll
+    - Froppy
+    - Snqkee_
+    - iShady
+    - Doenerman
+    - GuhhYT
+    - Cuz_Im_Lisa
+    - Poei
+    - 5chool
+    - Aeronomy
+    - zak3n
+    - PluginYAML
+    - Smoopy_
+    - Poshiii
+    - Kadoz
+    - Poei
+    - falscherBlumb
+    - xlAdidqs
+    - Fischkopf
+    - Saturo
+    - Mhyra
+    - Skhh
+    - KakyoinTheGamer
+    - SkuSku
+    - IchBinsTim
+    - MonteFan
+    - Horst_Schraube
+    - zWinis
+    - Pourin
+    - Feliipe
+    - Orkayy

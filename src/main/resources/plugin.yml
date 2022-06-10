@@ -1,0 +1,47 @@
+name: TTT
+version: 1.1
+author: Haoshoku
+softdepend: [ProtocolLib, NickAPI, NickAddon]
+
+main: xyz.haoshoku.ttt.TTTPlugin
+commands:
+  build:
+    description: Allows you to build, admin command
+    permission: ttt.build
+  detectivechat:
+    description: DetectiveChat
+    aliases: [d]
+  forcereset:
+    description: Forceresets a players stats, admin command
+    permission: ttt.forcereset
+  givepass:
+    description: Gives traitor and detective pass, admin command
+    permission: ttt.givepass
+  mapteleport:
+    description: MapTeleport, admin command
+    permission: ttt.mapteleport
+    aliases: [mt, mapt, mtp]
+  nick:
+    description: Nicks yourself
+    permission: ttt.nick
+  resetstats:
+    description: Resets your stats by using tokens
+    aliases: [reset, rs]
+  shop:
+    description: Shop command
+    aliases: [b]
+  start:
+    description: Starts the game, admin command
+    permission: ttt.start
+  stats:
+    description: Stats of TTT
+  tokens:
+    description: Token of players
+    aliases: [token]
+  traitorchat:
+    description: Traitor Chat
+    aliases: [t]
+  ttt:
+    description: TTT admin command
+    permission: ttt.admin
+
